@@ -379,7 +379,7 @@ class EngineMenu(AgentsPlatformEngine):
         def find_subs_plan_by_period_name(subscription_plans: List[Dict], period_val: PeriodicalPlan) -> Optional[Dict]:
             """
             Searches for the needed subscription plan in the given ones by name
-            Reference: https://own1.docs.apiary.io/#reference/agents-data
+            Reference: See Agent Data section in docs/APIDescription.md
             :param subscription_plans: Subscription plans to search in
             :param period_val: "DAY", "WEEK", or "MONTH"
             :return: If found, returns a subscription plan data for the given period, otherwise, None

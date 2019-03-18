@@ -27,11 +27,11 @@ After our agent-service has received _liveUpdateAgentTaskElementAnswersSaved_, w
 
 
 ## 2. JSON Parsing
-AgentTask's structure is described in [AgentTask's GET-request](https://own1.docs.apiary.io/#reference/agent-task-configurations/agentdataagentdataidagenttasksagenttaskidconfiguration/get).
+AgentTask's structure is described in `Agent Task Configuration` section in docs/APIDescription.md. See GET-request there.
 
 ### Extract LiveUpdate's Data
 In `agents_platform/base_service.py::on_websocket_message()` agent-service receives these IDs from the web-socket message:
-```python
+```
 def on_websocket_message(self, ws: websocket.WebSocketApp, message: str) -> None:
     """Processes web-socket's messages"""
     message_data = json.loads(message)
@@ -47,7 +47,7 @@ def on_websocket_message(self, ws: websocket.WebSocketApp, message: str) -> None
 
 ### Grab User's Answers
 In `on_websocket_message()` agent-service also gets User's answers for the AgentTask:
-```python
+```
     agent = self.get_agent()
     agent_task = get_agent_task_answers_by_id(agent.get_platform_access(),
                                               agent_data_id,
@@ -60,7 +60,7 @@ In `on_websocket_message()` agent-service also gets User's answers for the Agent
 ## 3. Sending Data from Service to Agent
 This part is unique for each agent.
 In general, you need to know agent's (not agent-service's) URL and port to send a request in `agents_platform/base_service.py::run_on_element()`'s overriden function..
-```python
+```
 from typing import List
 import requests
 from agent_platform.own_adapter.agent_task import get_answer_from_agent_task_answers
@@ -79,13 +79,13 @@ def _run_on_element(self, element: Element, agent_task: Dict = None) -> [Element
 
 ## 4. Sending the Results Back to User
 To send a file to the element you can use also in `_run_on_element()` something like:
-```python
+```
 title = 'A Brand New File'
 with open('absolute_or_relative_path_to_file', 'rb') as file:
     element.put_file(title, bytearray(file.read()))
 ```
 or to send a message on the board:
-```python
+```
 message = 'The task is done, Your Grace!'
 element.get_board().put_message(message)
 ```

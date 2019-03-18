@@ -284,8 +284,8 @@ def translate(text: str, from_language: str = None, to_language: str = ENGLISH) 
 def distance_between_positions(positions_1: List[int], positions_2: List[int]) -> float:
     """
     Find a minimum distance between positions in two arrays
-    :param positions_1: an array containing positions of a fist element
-    :param positions_2: an array containing positions of a fist element
+    :param positions_1: an array containing positions of the first element
+    :param positions_2: an array containing positions of the second element
     :return: min distance
     """
     # Sliding window method

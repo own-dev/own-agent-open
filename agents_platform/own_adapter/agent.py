@@ -21,7 +21,7 @@ from utils import logger
 
 class Agent:
     """
-    Allows to work with Redis' cache on agents' elements
+    Allows to work with backend requests related to Agents, and Redis' cache on agents' elements
     """
     def __init__(self, platform_access: PlatformAccess, redis_name: str = ''):
         self.__platform_access = platform_access
@@ -71,7 +71,7 @@ class Agent:
                               agent_data_id: int) -> Optional[List[Dict]]:
         """
         Returns all the agent's AgentTasks by the given AgentDataID
-        API-referenece: https://own1.docs.apiary.io/#reference/agent-tasks/agentdataagentdataidagenttasks/get
+        API-referenece: https://github.com/own-dev/own-agent-open/blob/master/docs/APIDescription.md#get-agentdataagentdataidagenttasks
 
         :param platform_access: PlatformAccess of a user which has access to the agent
                                 (or of an agent itself)
@@ -160,7 +160,7 @@ class Agent:
         for board in self.get_boards():
             elements.extend(board.get_elements(regexp))
         # removing template elements
-        # FIXME: Is it still relevant?..
+        # TODO: Refactor and stop using redis in favour of firestore
         agent_name = self.get_redis_name().replace('_agent', '')
         elements = [element for element in elements
                     if element.get_name() != f'@{agent_name}: place company name(s) here']

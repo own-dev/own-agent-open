@@ -1,5 +1,5 @@
 """
-This modules only contains the global variables and platform config
+This module only contains global variables and platform config
 """
 
 import os

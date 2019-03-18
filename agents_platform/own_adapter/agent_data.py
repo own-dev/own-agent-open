@@ -17,7 +17,7 @@ def put_agent_data(platform_access: PlatformAccess,
                    data: Union[Dict, str], agent_data_id: int) -> Optional[Dict]:
     """
     Updates the instance of AgentDataConfiguration on the back-end
-    Reference: https://own1.docs.apiary.io/#reference/agents-data/agentdataagentdataid/put
+    Reference: https://github.com/own-dev/own-agent-open/blob/master/docs/APIDescription.md#put-agentdataagentdataid
 
     :param platform_access: PlatformAccess for this Agent
     :param data: AgentData configuration in dictionary or JSON (str) format
@@ -81,7 +81,7 @@ def post_agent_data(platform_access: PlatformAccess, data: Dict) -> Optional[Dic
 def delete_agent_data(platform_access: PlatformAccess, agent_data_id: int) -> Optional[Dict]:
     """
     Removes AgentData on a back-end for the given AgentData ID
-    Reference: https://own1.docs.apiary.io/#reference/agents-data/agentdataagentdataid/delete
+    Reference: https://github.com/own-dev/own-agent-open/blob/master/docs/APIDescription.md#delete-agentdataagentdataid
 
     :param platform_access:
     :param agent_data_id: Not to confuse with Agent/User ID!..
@@ -110,7 +110,7 @@ def delete_agent_data(platform_access: PlatformAccess, agent_data_id: int) -> Op
 def get_agent_data_by_id(platform_access: PlatformAccess, agent_data_id: int) -> Optional[Dict]:
     """
     Returns AgentData сonfiguration by the given AgentData ID
-    Reference: https://own1.docs.apiary.io/#reference/agents-data/agentdata/get
+    Reference: https://github.com/own-dev/own-agent-open/blob/master/docs/APIDescription.md#put-agentdataagentdataid
 
     :param platform_access: PlatformAccess instance for this Agent/User
     :param agent_data_id: Not to confuse with User ID!..
@@ -168,7 +168,7 @@ def get_agent_data_by_user_id(platform_access: PlatformAccess, user_id: int = No
 def get_all_agents_data(platform_access: PlatformAccess) -> Optional[List[Dict]]:
     """
     Returns AgentData for all agents
-    Reference: https://own1.docs.apiary.io/#reference/agents-data/agentdata/get
+    Reference: https://github.com/own-dev/own-agent-open/blob/master/docs/APIDescription.md#get-agentdata
     :return:
     [
         {

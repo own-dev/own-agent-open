@@ -433,7 +433,7 @@ class Element:
         :param chart_type: a type of the chart
         :param data: data to show in the chart
         Look for more detailed content explanation here:
-        https://own1.docs.apiary.io/#reference/element-files,-thumbnails-and-previews/get
+        https://github.com/own-dev/own-agent-open/blob/master/docs/APIDescription.md#post-boardsboardidelementselementidfiles
 
         :return: status_code from api or file_id,
         -1 if some line has less than 2 points,

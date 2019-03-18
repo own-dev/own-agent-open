@@ -88,9 +88,9 @@ class PlatformAccess:
             self.__access_token
             self.__secret_token
             self.__user_id
-        according the given parameters
+        according to the given parameters
 
-        Reference: https://own1.docs.apiary.io/#reference/access-tokens
+        Reference: https://github.com/own-dev/own-agent-open/blob/master/docs/APIDescription.md#group-access-tokens
 
         :return: Nothing. However, could execute sys.exit(1) if:
                                                 * no OWN_AGENT_ADDRESS is found

@@ -1,10 +1,10 @@
 """
 Module that formats charts to being accepted by server.
 Some charts returned from agent may contain not proper information:
-1.len(series[i].data) != len(indicator.data) i.e. x axis is not comparable with all series
-2.For Line and Bar charts if new series are added to chart we have to send them in separate request
+1. len(series[i].data) != len(indicator.data) i.e. x axis is not comparable with all series
+2. For Line and Bar charts if new series are added to chart we have to send them in separate request
 Check:
-https://own1.docs.apiary.io/reference/element-files,-thumbnails-and-previews/boardsboardidelementselementidfilesfileid/patch
+Element files, thumbnails and previews section in docs/APIDescription.md
 """
 
 import copy
@@ -133,7 +133,7 @@ def append_default_points_to_data(number_of_points: int, existing_points: List,
                                   chart_type: str = BAR_CHART_TYPE) -> List:
     """
     Appends extra points to list of ponits for specific chart types: LINE, BAR and RADAR
-    Check https://own1.docs.apiary.io/#reference/element-files,-thumbnails-and-previews/patch
+    Check https://github.com/own-dev/own-agent-open/blob/master/docs/APIDescription.md#patch-boardsboardidelementselementidfilesfileid
     :param number_of_points: how many points to add
     :param existing_points: existing points in line/bar or other possible chart items
     :param append: True to append, False to prepend to existing points
@@ -153,7 +153,7 @@ def prepend_default_points_to_data(number_of_points: int, existing_points: List,
                                   chart_type: str = BAR_CHART_TYPE) -> List:
     """
     Prepends extra points to list of ponits for specific chart types: LINE, BAR and RADAR
-    Check https://own1.docs.apiary.io/#reference/element-files,-thumbnails-and-previews/patch
+    Check https://github.com/own-dev/own-agent-open/blob/master/docs/APIDescription.md#patch-boardsboardidelementselementidfilesfileid
     :param number_of_points: how many points to add
     :param existing_points: existing points in line/bar or other possible chart items
     :param chart_type: type of a chart to extend

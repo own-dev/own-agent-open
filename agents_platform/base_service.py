@@ -145,19 +145,6 @@ class AgentService(metaclass=ABCMeta):
             # TODO: Catch all the exceptions
             error(ENGINE_NAME, excpt)
 
-    # Base service layer
-    def _run_on_board(self, board: Board) -> None:
-        """
-        Runs the agent on the given board's elements
-        :param board: Object: own_platform.board.Board on which the agent [should be / is] invited
-        :return: Nothing
-        """
-        regexp = '@' + self.name + ':.+'
-        elements = board.get_elements(regexp)
-        for element in elements:
-            # TODO: Threads, maybe?..
-            self._run_on_element(element)
-
     @abstractmethod
     def identify_and_pass_task(self, element: Element, agent_task: Dict, update: bool = False,
                                doc_id: str = None) -> Optional[Element]:

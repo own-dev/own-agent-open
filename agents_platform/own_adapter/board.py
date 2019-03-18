@@ -271,7 +271,7 @@ class Board:
 
         :param board_size: {'sizeX': int, 'sizeY': int}
         :param response_data: Data from get_elements' response
-        Reference: https://own1.docs.apiary.io/#reference/board-elements/boardsboardidelements/get
+        Reference: https://github.com/own-dev/own-agent-open/blob/master/docs/APIDescription.md#get-boardsboardidelements
 
         :return: 2D-matrix where 1 means this [i;j] cell is occupied by some element,
                                  0 otherwise
