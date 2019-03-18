@@ -10,10 +10,13 @@ https://docs.google.com/presentation/d/1GOfc-5S05ART9Z2lXqx2HKfQXpd-rfCxP65jW6tW
 # Set Up
 ## Clone the source code
 `git config user.name "Your Name"`
+
 `git config user.email your@mail.com`
 
 `cd` to the directory you want to clone own-agent code
+
 `git clone https://github.com/own-dev/own-agent`
+
 `cd own-agent`
 
 Agents use firestore as a data storage and as a mediator between different instances of agents.
@@ -25,8 +28,8 @@ where project-name will be a name of a newly created firebase project:
 https://googleapis.github.io/google-cloud-python/latest/core/auth.html
 
 ## Add necessary environment variables to .bashrc
-! Note: if you are deploying the system for development and/or testing purposes,
-please use test account credentials for all the agents
+**Note**: if you are deploying the system for development and/or testing purposes,
+it is advised to use test account credentials for all the agents
 ```
 export OWN_AGENTS_PATH="/opt/own-agent" # where opt is the directory you cloned own-agent code to
 export PYTHONPATH="$OWN_AGENTS_PATH:$OWN_AGENTS_PATH/agents_platform:$OWN_AGENTS_PATH/agents:$OWN_AGENTS_PATH/agents/news:$OWN_AGENTS_PATH/agents/ip:$OWN_AGENTS_PATH/agents/science:$OWN_AGENTS_PATH/agents_platform/own_adapter"
