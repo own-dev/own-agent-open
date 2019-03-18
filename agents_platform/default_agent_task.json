@@ -1,0 +1,105 @@
+{
+  "agentTask": {
+    "description": "Default AgentTask Description",
+    "input": {
+      "title": "Default Input Title",
+      "indexedInputFields": [
+        {
+          "index": 1,
+          "inputElement": {
+            "question": {
+              "text": "Default Single-choice InputField Text",
+              "questionType": "SINGLE_CHOICE",
+              "questionAnswers": [
+                {
+                  "answer": "Default Correct Answer 1",
+                  "isGolden": true
+                },
+                {
+                  "answer": "Default Incorrect Answer 1",
+                  "isGolden": false
+                },
+                {
+                  "answer": "Default Incorrect Answer 2",
+                  "isGolden": false
+                },
+                {
+                  "answer": "Default Correct Answer 2",
+                  "isGolden": true
+                },
+                {
+                  "answer": "Default Incorrect Answer 3",
+                  "isGolden": false
+                }
+              ]
+            }
+          }
+        },
+        {
+          "index": 2,
+          "inputElement": {
+            "textbox": {
+              "placeholder": "Default Textbox Placeholder",
+              "goldenText": "Default Correct Answer",
+              "isMultiline": true
+            }
+          }
+        },
+        {
+          "index": 3,
+          "inputElement": {
+            "question": {
+              "text": "Default Multiple-choice InputField Text",
+              "questionType": "MULTIPLE_CHOICE",
+              "questionAnswers": [
+                {
+                  "answer": "Default Correct Answer 1",
+                  "isGolden": true
+                },
+                {
+                  "answer": "Default Correct Answer 2",
+                  "isGolden": true
+                },
+                {
+                  "answer": "Default Incorrect Answer 1",
+                  "isGolden": true
+                },
+                {
+                  "answer": "Default Correct Answer 3",
+                  "isGolden": true
+                }
+              ]
+            }
+          }
+        },
+        {
+          "index": 4,
+          "inputElement": {
+            "question": {
+              "text": "Default Dropdown InputField Text",
+              "questionType": "DROPDOWN",
+              "questionAnswers": [
+                {
+                  "answer": "Default Correct Answer 1",
+                  "isGolden": false
+                },
+                {
+                  "answer": "Default Correct Answer 2",
+                  "isGolden": false
+                },
+                {
+                  "answer": "Default Incorrect Answer 3",
+                  "isGolden": false
+                },
+                {
+                  "answer": "Default Correct Answer",
+                  "isGolden": true
+                }
+              ]
+            }
+          }
+        }
+      ]
+    }
+  }
+}

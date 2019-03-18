@@ -1,0 +1,27 @@
+{
+  "agentTask": {
+    "description": "Find funny jokes",
+    "input": {
+      "title": "Please, give me a topic to search for.",
+      "indexedInputFields": [
+        {
+          "index": 1,
+          "inputElementType": "TEXTBOX",
+          "inputElement": {
+            "textbox": {
+              "label": "Topic",
+              "placeholder": "e.g. Chuck Norris; empty = print a random joke",
+              "goldenText": "",
+              "isMultiline": false
+            }
+          },
+          "inputElementAnswers": [
+            {
+              "agentTaskTextboxAnswer": null
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

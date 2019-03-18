@@ -16,7 +16,7 @@ please use test account credentials for all the agents
 ```
 export OWN_AGENTS_PATH="/opt/own-agent" # where opt is the directory you cloned own-agent code to
 export PYTHONPATH="$OWN_AGENTS_PATH:$OWN_AGENTS_PATH/agents_platform:$OWN_AGENTS_PATH/agents:$OWN_AGENTS_PATH/agents/news:$OWN_AGENTS_PATH/agents/ip:$OWN_AGENTS_PATH/agents/science:$OWN_AGENTS_PATH/agents_platform/own_adapter"
-export OWN_AGENT_ADDRESS="http://alpha.own.space/" # Change to http://0.0.0.0:9002/ to test with local backend
+export OWN_AGENT_ADDRESS="http://alpha.own.space:9000" # Change to http://0.0.0.0:9002/ to test with local backend
 export OWN_PLATFORM_PREFIX=""
 export OWN_PLATFORM_PROTOCOL="ws"
 export OWN_TEST_LOGIN="{SPECIFY_LOGIN_FROM_ALPHA.OWN.SPACE}"
@@ -26,6 +26,8 @@ export OWN_TEST_AGENT_PASSWORD="{SPECIFY_LOGIN_FROM_ALPHA.OWN.SPACE}"
 export REDIS_ADDRESS="127.0.0.1"
 export REDIS_PORT="6379"
 export USE_LOCAL_IP="True"
+export GOOGLE_CLOUD_PROJECT_NAME="{GOOGLE_CLOUD_PROJECT_NAME}" # name of the firebase project, create at https://firebase.google.com/
+export CREDENTIALS_DB_KEY="credentials_test"
 ```
 
 Authenticate to google cloud from your local machine:
