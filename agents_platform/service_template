@@ -1,0 +1,23 @@
+"""
+Write your module description
+"""
+
+
+from agents_platform.base_service import AgentService
+from agents_platform.own_adapter.element import Element
+import agents_platform.logger as logger
+
+
+class $class_name(AgentService):
+    """Write your docstrings"""
+
+    def _run_on_element(self, element: Element) -> [Element, None]:
+        """
+        Running on a target element
+        :param element: own_adapter.element.Element on which the agent should run
+        :return: Target element
+        """
+        logger.debug(self.name, f'{self.name} is reporting for duty')
+
+    def thread_websocket_transition(self, element):
+        return self._run_on_element(element)

@@ -1,0 +1,62 @@
+# Each line is a file pattern followed by one or more owners.
+
+# These owners will be the default owners for everything in
+# the repo. Unless a later match takes precedence,
+# @AlNedorezov will be requested for
+# review when someone opens a pull request.
+*       @AlNedorezov
+
+# When someone opens a pull request that only modifies agents code,
+# only users mentioned below and not the global owner(s)
+# will be requested for a review.
+/agents @AlNedorezov @UnoYakshi @andrew-it
+
+# When someone opens a pull request that only modifies Agents Utils code,
+# only users mentioned below and not the global owner(s)
+# will be requested for a review.
+/agents/agents_utils @AlNedorezov @andrew-it @UnoYakshi @BeardedWhale @ipodlipnova
+
+# When someone opens a pull request that only modifies agents platform code,
+# only users mentioned below and not the global owner(s)
+# will be requested for a review.
+/agents_platform @AlNedorezov @UnoYakshi @andrew-it
+
+# When someone opens a pull request that only modifies CLI code,
+# only users mentioned below and not the global owner(s)
+# will be requested for a review.
+/agents_platform/cli @AlNedorezov @UnoYakshi 
+
+# When someone opens a pull request that only modifies OWN Adapter code,
+# only users mentioned below and not the global owner(s)
+# will be requested for a review.
+/agents_platform/own_adapter @AlNedorezov @UnoYakshi 
+
+# When someone opens a pull request that only modifies services,
+# only users mentioned below and not the global owner(s)
+# will be requested for a review.
+/agents_platform/services @AlNedorezov @UnoYakshi @andrew-it
+
+# When someone opens a pull request that only modifies tests,
+# only users mentioned below and not the global owner(s)
+# will be requested for a review.
+/tests @AlNedorezov @UnoYakshi @andrew-it
+
+# When someone opens a pull request that only modifies agent task integration tests,
+# only users mentioned below and not the global owner(s)
+# will be requested for a review.
+/tests/integration_tests/agents_platform/agents_task @AlNedorezov @andrew-it
+
+# When someone opens a pull request that only modifies own adapter integration tests,
+# only users mentioned below and not the global owner(s)
+# will be requested for a review.
+/tests/integration_tests/agents_platform/own_adapter @AlNedorezov @UnoYakshi @asverasver
+
+# When someone opens a pull request that only modifies agents utils unit tests,
+# only users mentioned below and not the global owner(s)
+# will be requested for a review.
+/tests/unit_tests/agents/agents_utils @AlNedorezov @andrew-it @UnoYakshi @BeardedWhale @ipodlipnova
+
+# When someone opens a pull request that only modifies utils,
+# only users mentioned below and not the global owner(s)
+# will be requested for a review.
+/utils @AlNedorezov @andrew-it @UnoYakshi @ipodlipnova @BeardedWhale

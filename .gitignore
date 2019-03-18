@@ -90,10 +90,28 @@ celerybeat-schedule
 .venv
 venv/
 ENV/
+ownenv/
 
 # Spyder project settings
 .spyderproject
 
 # Rope project settings
 .ropeproject
-/ip_reports/
+
+# Remove all the log-files
+.log
+
+# Services .txt
+/agents_platform/*/*.txt
+
+# SonarQube
+.scannerwork/
+
+.DS_Store
+
+# API keys and files neccessary for agents
+/agents/keys_files/*
+
+*.lock
+
+downloads/*
