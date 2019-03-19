@@ -42,9 +42,13 @@ export OWN_TEST_AGENT_LOGIN="{SPECIFY_LOGIN_FROM_ALPHA.OWN.SPACE}"
 export OWN_TEST_AGENT_PASSWORD="{SPECIFY_LOGIN_FROM_ALPHA.OWN.SPACE}"
 export REDIS_ADDRESS="127.0.0.1"
 export REDIS_PORT="6379"
-export USE_LOCAL_IP="True"
+export USE_LOCAL_IP="True" # On the machines with agents and handlers posts available from the web may be set to False
 export GOOGLE_CLOUD_PROJECT_NAME="{GOOGLE_CLOUD_PROJECT_NAME}" # name of the firebase project, created at https://firebase.google.com/
 export CREDENTIALS_DB_KEY="credentials_test"
+# Jokes Agent
+export OWN_JOKES_AGENT_LOGIN="{SPECIFY_LOGIN_FROM_ALPHA.OWN.SPACE}"     # To test Jokes Agent,
+export OWN_JOKES_AGENT_PASSWORD="{SPECIFY_LOGIN_FROM_ALPHA.OWN.SPACE}"  # similar environment variables should be set
+export JOKES_AGENT_DB_KEY="jokes_test_1.0.0"                            # for all agents used in the platform
 ```
 
 ## Deploy

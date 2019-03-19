@@ -43,7 +43,7 @@ pip install -r pip-requirements.txt
 echo "add next lines to your ~/.bashrc file"
 echo "export OWN_AGENTS_PATH=\"/srv/own-agent\" # where srv is the directory you cloned own-agent code to"
 echo "export PYTHONPATH=\"$OWN_AGENTS_PATH:$OWN_AGENTS_PATH/agents_platform:$OWN_AGENTS_PATH/agents:$OWN_AGENTS_PATH/agents/news:$OWN_AGENTS_PATH/agents/ip:$OWN_AGENTS_PATH/agents/science:$OWN_AGENTS_PATH/agents_platform/own_adapter\""
-echo "export OWN_AGENT_ADDRESS=\"http://alpha.own.space:9000\" # Change to http://0.0.0.0:9002/ to test with local backend
+echo "export OWN_AGENT_ADDRESS=\"http://alpha.own.space:9000\"" # Change to http://0.0.0.0:9002/ to test with local backend
 echo "export OWN_PLATFORM_PREFIX=\"\""
 echo "export OWN_PLATFORM_PROTOCOL=\"ws\""
 echo "export OWN_TEST_LOGIN=\"{SPECIFY_LOGIN_FROM_ALPHA.OWN.SPACE}\""
@@ -52,6 +52,10 @@ echo "export OWN_TEST_LOGIN=\"{SPECIFY_LOGIN_FROM_ALPHA.OWN.SPACE}\""
 echo "export OWN_TEST_PASSWORD=\"{SPECIFY_PASSWORD_FROM_ALPHA.OWN.SPACE}\""
 echo "export REDIS_ADDRESS=\"127.0.0.1\""
 echo "export REDIS_PORT=\"6379\""
-echo "export USE_LOCAL_IP=\"True\""
+echo "export USE_LOCAL_IP=\"True\"" # On the machines with agents and handlers posts available from the web may be set to False
 echo "export GOOGLE_CLOUD_PROJECT_NAME=\"{PROJECT_NAME}\"" # name of the firebase project, create at https://firebase.google.com/
 echo "export CREDENTIALS_DB_KEY=\"credentials_test\""
+# Jokes Agent
+echo "export OWN_JOKES_AGENT_LOGIN=\"{SPECIFY_LOGIN_FROM_ALPHA.OWN.SPACE}\""     # To test Jokes Agent,
+echo "export OWN_JOKES_AGENT_PASSWORD=\"{SPECIFY_LOGIN_FROM_ALPHA.OWN.SPACE}\""  # similar environment variables should be set
+echo "export JOKES_AGENT_DB_KEY=\"jokes_test_1.0.0\""                            # for all agents used in the platform
