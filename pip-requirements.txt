@@ -59,7 +59,7 @@ six==1.11.0
 stop-words==2018.7.23
 textblob==0.15.1
 teamcity-messages==1.21
-urllib3==1.23
+urllib3==1.24.2
 watson-developer-cloud==1.6.1
 websocket-client==0.48.0
 Werkzeug==0.14.1
