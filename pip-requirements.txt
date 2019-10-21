@@ -62,7 +62,7 @@ teamcity-messages==1.21
 urllib3==1.23
 watson-developer-cloud==1.6.1
 websocket-client==0.48.0
-Werkzeug==0.14.1
+Werkzeug==0.15.3
 wordcloud==1.5.0
 wrapt==1.10.11
 git+https://git@github.com/ping/instagram_private_api.git@1.5.7
